@@ -1,6 +1,7 @@
 const Recipient = require('./recipient')
 const Donor = require('./donor')
 const Bank = require('./bank')
+const Database = require('./database')
 
 const california = new Bank('Stanford Blood Center', 'California', '888-723-7831')
 
@@ -32,3 +33,7 @@ california.recipients.forEach(element => {
 });
 
 console.log('Blood donation appointments:', california.telNum)
+
+Database.save(california)
+const loadedFile = Database.load()
+console.log(loadedFile)

@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/twinsinc/Blood_Banking.git"
   },
-  "author": "Egor Yushchenko",
-  "license": "ISC",
+  "author": "Egor Yushchenko <eayushchenko@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/twinsinc/Blood_Banking/issues"
   },
