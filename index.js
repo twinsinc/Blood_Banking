@@ -16,15 +16,16 @@ const blake = new Donor('Blake', '19', 'B-')
 const mandy = new Recipient('Mandy', 'A-')
 const kevin = new Recipient('Kevin', 'B-')
 
-andy.donates(california)
-alisha.donates(california)
-brian.donates(california)
+andy.donateTo(california)
+alisha.donateTo(california)
+brian.donateTo(california)
+console.log(andy.getBloodType())
 
-scot.donates(texas)
-blake.donates(texas)
+scot.donateTo(texas)
+blake.donateTo(texas)
 
-mandy.needsBlood(california)
-kevin.needsBlood(california)
+mandy.needBlood(california)
+kevin.needBlood(california)
 
 california.report()
 

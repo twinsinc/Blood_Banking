@@ -1,10 +1,12 @@
+const Bloodtype = require('./bloodtype')
+
 module.exports = class Recipient {
     constructor(name, bloodtype){
         this.name = name
-        this.bloodtype = bloodtype 
+        this.bloodtype = new Bloodtype(bloodtype)
     }
 
-    needsBlood(bank){
+    needBlood(bank){
         bank.recipients.push(this)
     }
 }
