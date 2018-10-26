@@ -14,4 +14,8 @@ module.exports = class Donor {
     getBloodType(){
         return this.bloodtype
     }
+
+    static create({name, age, bloodtype}){
+        return new Donor(name, age, JSON.stringify(bloodtype))
+    }
 }

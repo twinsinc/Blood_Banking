@@ -9,4 +9,8 @@ module.exports = class Recipient {
     needBlood(bank){
         bank.recipients.push(this)
     }
+
+    static create({name, bloodtype}){
+        return new Recipient(name, JSON.stringify(bloodtype))
+    }
 }
