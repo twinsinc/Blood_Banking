@@ -17,7 +17,7 @@ module.exports = class Donor {
         return this.bloodtype.btname
     }
 
-    donatePlasma(){
+    getPlasma(){
         return this.onlyPlasma
     }
 
