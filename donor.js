@@ -1,10 +1,12 @@
 const Bloodtype = require('./bloodtype')
 
 module.exports = class Donor {
-    constructor(name, age, bloodtype){
+    constructor(name, age, bloodtype, kell, onlyPlasma = false){
         this.name = name
         this.age = age
         this.bloodtype = new Bloodtype(bloodtype)
+        this.kell = kell
+        this.onlyPlasma = onlyPlasma
     }
 
     donateTo(bank){
@@ -12,10 +14,14 @@ module.exports = class Donor {
     }
 
     getBloodType(){
-        return this.bloodtype
+        return this.bloodtype.btname
     }
 
-    static create({name, age, bloodtype}){
-        return new Donor(name, age, JSON.stringify(bloodtype))
+    donatePlasma(){
+        return this.onlyPlasma
+    }
+
+    static create({name, age, bloodtype, kell, onlyPlasma}){
+        return new Donor(name, age, JSON.stringify(bloodtype.btname), kell, onlyPlasma)
     }
 }

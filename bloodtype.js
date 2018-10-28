@@ -1,5 +1,5 @@
 module.exports =  class BloodType {
-    constructor(bloodtype){
-        this.bloodtype = bloodtype
+    constructor(btname){
+        this.btname = btname
     }
 }

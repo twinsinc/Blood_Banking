@@ -11,6 +11,6 @@ module.exports = class Recipient {
     }
 
     static create({name, bloodtype}){
-        return new Recipient(name, JSON.stringify(bloodtype))
+        return new Recipient(name, JSON.stringify(bloodtype.btname))
     }
 }
