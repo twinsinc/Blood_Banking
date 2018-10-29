@@ -20,7 +20,7 @@ andy.donateTo(california)
 alisha.donateTo(california)
 brian.donateTo(california)
 console.log(andy.getBloodType())
-console.log(andy.donatePlasma())
+console.log(andy.getPlasma())
 
 scot.donateTo(texas)
 blake.donateTo(texas)
